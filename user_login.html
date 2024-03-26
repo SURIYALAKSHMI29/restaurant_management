@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form validation</title>
+    <link rel="stylesheet" href="user_login.css" />
+  </head>
+  <body>
+      
+    <h2>Welcome, Thanks for choosing us!</h2>
+    <form action="menu.html" onsubmit="event.preventDefault" >
+        <script src="user_login.js"></script>
+      <fieldset>
+        <legend>New User</legend>
+        
+        <br><br>
+        Enter your Name  <label class="colon">:</label>
+        <input type="text" class="align" id="name" required><br><br>
+       
+        Enter your E-Mail <label class="colon">:</label>
+        <input type="email" class="align" id="email" required> <br><br>
+
+        Enter your Gender
+        <label class="colon">:</label>
+        <input type="radio" name="gender" id="m" value="Male">Male
+        <input type="radio" name="gender" id="f" value="Female">Female<br><br>
+
+        Create your Password
+        <label class="colon">:</label>
+        <input type="password" class="align" id="p1" required>
+         </label> <br><br>
+
+         Confirm your Password <label class="colon">:</label>
+        <input type="password" class="align" id="p2" required> <br><br>
+
+        Mobile Number <label class="colon">:</label>
+        <input type="text" class="align" id="tel" required> <br><br>
+
+       
+        <input type="submit" value="Submit" class="button" onclick="check()"/>
+        <input type="reset" value="Clear" class="button"/>
+        <br><br>
+        
+      </fieldset>
+      </form>
+  </body>
+</html>

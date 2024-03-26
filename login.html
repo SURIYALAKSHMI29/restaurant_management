@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <br><br>
+    <a id="signin" href="user_login.html">New User? SignIn</a>
+    <div class="login-container">
+        <h2>Hash Restaurant</h2>
+        <form>
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group" id="radio1">
+                Admin<input type="radio" name='cate' value="admin">
+                Employee<input type="radio" name='cate' value="Employee">
+                Customer<input type="radio" name='cate' value="Customer">
+                <br>
+            </div>
+            
+            <button type="submit" onclick="check()">Login</button>
+        </form>
+    </div>
+</body>
+</html>
